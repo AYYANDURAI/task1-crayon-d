@@ -1,0 +1,115 @@
+.navigation-menu {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+}
+
+
+.nav__icons {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__icons>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -20px;
+    font-size: 11px;
+    width: 100px;
+}
+
+.profile__avatar {
+    height: 32px !important;
+    width: 32px !important;
+    font-size: 10px !important;
+}
+
+.search {
+    padding: 5px;
+    display: flex;
+    margin-top: 12px;
+    border-radius: 3px;
+    width: 200px;
+    outline: none;
+    border: none;
+}
+
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+
+.fa {
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    color: grey;
+    font-size: 15px;
+}
+
+.toggle {
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    background-color: black;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+a {
+    color: white;
+}
+
+@media (max-width:700px) {
+    .toggle {
+        display: flex;
+    }
+
+    .navigation-menu {
+        display: flex;
+    }
+
+    .nav__icons {
+        display: none;
+        flex-direction: column;
+        margin-top: 80px;
+        margin-right: 200px;
+    }
+
+    .fa {
+        display:none;
+        position: absolute;
+        top: 45%;
+        left: 63%;
+    }
+
+    .nav__icons>li {
+        margin-top: 10px;
+    }
+}

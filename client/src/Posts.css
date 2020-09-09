@@ -1,0 +1,189 @@
+.posts {
+    background-color: #f7f7f7;
+    max-width: 555px;
+    height: 90px;
+    border: 1px solid lightgrey;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.posts__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.posts__header--detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.posts__header--btns {
+    margin-left: 140px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.posts__header--btns button {
+    margin-right: 10px;
+    background-color: white;
+    border: none;
+    padding: 5px 23px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: none;
+}
+
+.posts__header--btns button>img {
+    width: 15px;
+    height: 15px;
+}
+
+.disable_btn {
+    background-color: #efebf0;
+}
+
+.posts__area {
+    max-width: 520px;
+}
+
+.custom-file-input {
+    color: transparent;
+    outline: none;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::after {
+    content: '';
+    position: absolute;
+    background: url('https://img.icons8.com/material-outlined/24/000000/image.png');
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    top: 30%;
+    left: 28%;
+}
+
+.custom-file-input::before {
+    content: 'Add';
+    color: black;
+    display: inline-block;
+    background: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 15px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    width: 45px;
+    font-size: 10pt;
+}
+
+.custom-file-input:hover::before {
+    border-color: black;
+}
+
+.custom-file-input:active {
+    outline: 0;
+}
+
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.posts__details>textarea {
+    border: none;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    font-size: 1.2rem;
+    overflow-y: hidden;
+    max-width: 555px;
+}
+
+textarea::placeholder {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.posts__details {
+    background-color: white;
+}
+
+.posts__details p {
+    padding: 20px;
+    text-align: right;
+}
+
+.posts_info {
+    position: relative;
+}
+
+.posts_image {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    padding: 10px;
+    z-index: -1;
+}
+
+.close {
+    color: black;
+    position: absolute;
+    top: 19%;
+    left: 51%;
+    cursor: pointer;
+}
+
+.load {
+    animation: loading 2s linear infinite;
+}
+
+.msg {
+    margin-top: 50px;
+    max-width: 250px;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.posts>i {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 320px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
